@@ -8,10 +8,11 @@
 
 import ProductList from "@/components/shared/product/product-list";
 import { getLatestProduct } from "@/lib/actions/product.action";
+import { Product } from "@/types";
 
-const HomePage =async () => {
-    // await delay(2000); 
-    const newProducts = await getLatestProduct();
+const HomePage = async () => {
+    // await delay(2000);
+    const newProducts: Product[] = await getLatestProduct();
     console.log(newProducts);
     return (
         <>
