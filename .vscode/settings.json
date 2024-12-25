@@ -1,0 +1,26 @@
+{
+    // Global settings
+    "editor.wordWrap": "wordWrapColumn",
+    // "editor.wordWrapColumn": 180,
+    // "editor.rulers": [180],
+    "editor.formatOnSave": true,
+    // "editor.minimap.maxColumn": 180,
+    "git-graph.defaultColumnVisibility": {
+        "Date": true,
+        "Author": true,
+        "Commit": true
+    },
+    "cSpell.words": ["datasource", "dbgenerated", "neondatabase", "Prostore"],
+
+    // Language-specific settings for TypeScript React (.tsx)
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode", // Ensure Prettier or desired formatter is installed
+        // "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 200,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+        // "editor.rulers": [180]
+    },
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+}
